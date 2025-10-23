@@ -1,0 +1,192 @@
+/* === GLOBAL RESET === */
+/* Removes default browser spacing, ensures consistent box sizing,
+   and sets a clean, modern font for the entire page */
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* === BODY === */
+/* Applies a light gradient background, sets text color and spacing,
+   and defines global line height for readability */
+body {
+    background: linear-gradient(120deg, #e3f2fd, #f9f9ff);
+    color: rgb(16, 4, 4);
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* === HEADER SECTION === */
+/* Centers header content and adds vertical spacing */
+header {
+    text-align: center;
+    padding: 50px 0 30px;
+}
+
+/* Main title of the header */
+header h1 {
+    font-size: 2.5rem;
+    color: #2a4d8f;
+    letter-spacing: 1px; /* Adds spacing between letters */
+}
+
+/* Subtitle or small text under the main title */
+header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* === NAVIGATION BAR === */
+/* Creates a colored navigation bar with rounded corners and shadow */
+nav {
+    background-color: #2a4d8f;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    max-width: 700px; /* Keeps it centered and not too wide */
+}
+
+/* Removes bullets and aligns menu items horizontally */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wraps items on small screens */
+}
+
+/* Adds spacing between each navigation item */
+nav ul li {
+    margin: 10px 15px;
+}
+
+/* Styles navigation links with padding and smooth hover effects */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background: #4d7bd1;
+}
+
+/* === MAIN SECTION (Content area) === */
+/* White card container for text and content */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles inside sections */
+h2 {
+    color: #2a4d8f;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs inside sections */
+p {
+    color: #555;
+}
+
+/* === ASIDE SECTION (Sidebar or related links) === */
+/* Light blue box for extra information or related links */
+aside {
+    background: #f0f4ff;
+    border-left: 5px solid rgb(79, 79, 219);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Title inside the aside */
+aside h3 {
+    color: #2a4d8f;
+    margin-bottom: 10px;
+}
+
+/* Removes bullets from list inside the aside */
+aside ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+/* Adds small margin between links */
+aside ul li {
+    margin: 6px 0;
+}
+
+/* Styles for links inside the aside */
+aside ul li a {
+    text-decoration: none;
+    color: #4d7bd1;
+    font-weight: bold;
+}
+
+/* Underline on hover for better UX */
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* === BUTTON INSIDE ASIDE === */
+/* Modern gradient button leading to contact page */
+aside button {
+    background: linear-gradient(130deg, #4a7bff, #6ea1ff);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover animation: moves up slightly and shows shadow */
+aside button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(74, 123, 255, 0.3);
+}
+
+/* Removes underline and sets button text color to white */
+aside button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* === FOOTER SECTION === */
+/* Centers the footer text and styles it subtly */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* === DETAILS ELEMENT === */
+/* Styles the collapsible “More info” section */
+details {
+    margin: 30px auto;
+    max-width: 700px;
+    background: #f0f4ff;
+    border: 1px solid rgb(132, 156, 222);
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+/* === RESPONSIVE DESIGN === */
+/* Adjusts navigation for smaller screens */
+@media (max-width:768px) {
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+    nav ul li {
+        margin: 10px 0; /* Adds spacing between vertical items */
+    }
+}
